@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Quiz Ever</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type='text/css'>
+</head>
+<body id="quiz-body">
+    <div class="flex-container" id="full-screen">
+        <header>
+            <h1>Which episode of "The Office" should you watch right now?</h1>
+        </header> 
+        <div class="question-container" id="question-1">
+            <div class="question-header">
+                <h2>How are you feeling right now?</h2>
+            </div>
+            <div class="answer-container">
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="current-emotion" value="dinner-party">
+                        <img src="happy.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="current-emotion" value="niagara">
+                        <img src="in-love.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="current-emotion" value="stress-relief">
+                        <img src="cringe.png"/>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="current-emotion" value="injury">
+                        <img src="laughing.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="current-emotion" value="goodbye-michael">
+                        <img src="sad.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="current-emotion" value="money">
+                        <img src="wink.png"/>
+                    </label>
+                </div>  
+            </div>
+        </div>
+        <div class="question-container" id="question-2">
+            <div class="question-header">
+                <h2>Who is your favorite character?</h2>
+            </div>
+            <div class="answer-container">
+                <div class="row">
+                    <label class="text-label">
+                        <input type="radio" name="favorite-character" value="dinner-party">
+                        <p>Dwight Schrute</p>
+                    </label>
+                    <label class="text-label">
+                        <input type="radio" name="favorite-character" value="niagara">
+                        <p>Jim Halpert</p>
+                    </label>
+                    <label class="text-label">
+                        <input type="radio" name="favorite-character" value="stress-relief">
+                        <p>Stanley Hudson</p>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="text-label">
+                        <input type="radio" name="favorite-character" value="injury">
+                        <p>Michael Scott</p>
+                    </label>
+                    <label class="text-label">
+                        <input type="radio" name="favorite-character" value="goodbye-michael">
+                        <p>Pam Beesly</p>
+                    </label>
+                    <label class="text-label">
+                        <input type="radio" name="favorite-character" value="money">
+                        <p>Angela Martin</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="question-container" id="question-3">
+            <div class="question-header">
+                <h2>Pick a miscellaneous object</h2>
+            </div>
+            <div class="answer-container">
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="random-object" value="dinner-party">
+                        <img src="candle.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object" value="niagara">
+                        <img src="tie.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object" value="stress-relief">
+                        <img src="first-aid-kit.png">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="random-object" value="injury">
+                        <img src="george-foreman-grill.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object" value="goodbye-michael">
+                        <img src="airplane.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object" value="money">
+                        <img src="telephone.png">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="question-container" id="question-4">
+            <div class="question-header">
+                <h2>Pick a setting</h2>
+            </div>
+            <div class="answer-container">
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="random-place" value="dinner-party">
+                        <img src="dining-room.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-place" value="niagara">
+                        <img src="boat.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-place" value="stress-relief">
+                        <img src="office.png"/>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="random-place" value="injury">
+                        <img src="bed.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-place" value="goodbye-michael">
+                        <img src="airport.png"/>
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-place" value="money">
+                        <img src="farm.png"/>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="question-container" id="question-5">
+            <div class="question-header">
+                <h2>Pick another object</h2>
+            </div>
+            <div class="answer-container">
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="random-object-2" value="dinner-party">
+                        <img src="television.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object-2" value="niagara">
+                        <img src="kleenex.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object-2" value="stress-relief">
+                        <img src="fire-alarm.png">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="image-label">
+                        <input type="radio" name="random-object-2" value="injury">
+                        <img src="bubble-wrap.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object-2" value="goodbye-michael">
+                        <img src="cake.png">
+                    </label>
+                    <label class="image-label">
+                        <input type="radio" name="random-object-2" value="money">
+                        <img src="train.png">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="submit-button">What should I watch?</button>
+        
+    </div>
+    <div class="modal" id="response-modal">
+        <div class="modal-content" id="error-modal">
+            <p class="modal-text">You haven't completed the quiz!!!!</p>
+            <img class="modal-gif" src="error.gif"/>
+        </div>
+        
+        <div class="modal-content" id="dinner-party-modal">
+            <p class="modal-text">You got "Dinner Party"!</p>
+            <img class="modal-gif" src="dinner-party.gif">
+        </div>
+        <div class="modal-content" id="niagara-modal">
+            <p class="modal-text">You got "Niagara"!</p>
+            <img class="modal-gif" src="niagara.gif">
+        </div>
+        <div class="modal-content" id="stress-relief-modal">
+            <p class="modal-text">You got "Stress Relief"!</p>
+            <img class="modal-gif" src="stress-relief.gif">
+        </div>
+        <div class="modal-content" id="the-injury-modal">
+            <p class="modal-text">You got "The Injury"!</p>
+            <img class="modal-gif" src="the-injury.gif">
+        </div>
+        <div class="modal-content" id="goodbye-michael-modal">
+            <p class="modal-text">You got "Goodbye Michael"!</p>
+            <img class="modal-gif" src="goodbye-michael.gif">
+        </div>
+        <div class="modal-content" id="money-modal">
+            <p class="modal-text">You got "Money"!</p>
+            <img class="modal-gif" src="money.gif">
+        </div>
+    </div>
+<script 
+    src="https://code.jquery.com/jquery-3.3.1.min.js" 
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<script src="main.js" type="text/javascript"></script>    
+</body>
+</html>

@@ -1,0 +1,189 @@
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    color: white;
+}
+
+#quiz-body {
+    height: 100%;
+    width: 100%;
+    transition: all .5s linear;
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex; 
+    justify-content: inherit;
+    background-image: url(title-background.png);
+    background-size: cover;
+    width: 100%;
+    
+    height: 40vh;
+    background-position-y:center;
+    
+}
+
+.header h1 {
+    padding-top:15%;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 90vw;
+    margin-bottom: inherit;
+}
+
+.question-header {
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+    justify-content: inherit;
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    align-items: inherit;
+    background-image: url(question-header-background.png)
+}
+
+.answer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: inherit;
+    width: 100%;
+    height: 60vh;
+}
+
+.row {
+    display: inherit;
+    justify-content: inherit;
+    flex-direction: row;
+    align-items: inherit;
+    height: inherit;
+    width: inherit;
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    border-style: solid;
+    border-width: 1px;
+    margin:10px;
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(0, 60, 128);
+    overflow:hidden;
+}
+
+label:first-child {
+    margin-left:0px;
+}
+
+label:last-child {
+    margin-right:0px;
+}
+
+label img {
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease;
+    background-color: inherit;  
+}
+
+#question-1 .answer-container .row label img {
+    width: 70%;
+}
+
+label:hover {  
+    font-size:20px;   
+}
+
+/*Inspired by https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css
+This method proportionally scales an image on hover*/
+label img:hover {
+    transform: scale(1.1,1.1);
+}
+
+label p {
+    transition: all .5s ease;
+    background-color: inherit;
+    color: white;
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+button:focus {
+    outline:0;
+}
+
+/*Inspired by https://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome
+This method removes the default blue line that surrounds an HTML <button> when it is active */
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:white;
+    color: black;
+    margin: 5% 15%;
+    padding: 20px;
+    border: 3px solid black;
+    width: 70%;
+}
+
+.modal-gif {
+    width: 60%;
+    height: 50%;
+}
