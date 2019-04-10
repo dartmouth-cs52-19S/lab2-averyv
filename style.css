@@ -36,6 +36,8 @@ header h1 {
     color: white;
     position: absolute;
     bottom: 5px;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 header img {
