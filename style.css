@@ -22,8 +22,7 @@ body {
 
 header {
     width: 100%;
-    height: 40vh;
-    background-position-y:center;
+    max-height: 40vh;
     position: relative;
     overflow: hidden;
 }
@@ -38,11 +37,16 @@ header h1 {
     bottom: 5px;
     padding-left: 12%;
     padding-right: 12%;
+    text-shadow: -2px 2px 0px red;
+    font-size: 3em;
 }
 
 header img {
     height: 100%;
     width: 100%;
+    transform: translateY(-200px);
+    transition: all 1s ease;
+    filter: brightness(70%);
 }
 
 .all-question-container {
@@ -183,7 +187,6 @@ button:hover {
     animation: rainbow 2.5s infinite;
     font-size: 1.5em;
     padding: 20px 40px;
-    
 }
 
 /*Inspired by https://codepen.io/beben-koben/pen/gfuvc 
@@ -285,28 +288,45 @@ This method makes the modal fade in as it slides in from the top*/
     top: 5px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+    header img {
+        transform: translateY(0px);
+    }
+
     body {
-        font-size: 1.2em;
         text-align: center;
     }
+
+    .question-container {
+        font-size: 1.2em;
+    }
+
     .answer-container {
         flex-direction: row;
         height: 100vh;
     }
+    
     .row {
         flex-direction: column;
     }
+
     .row:first-child {
         margin-right:10px;
     }
+
     .row:last-child {
         margin-left:10px;
     }
+
     label {
         width: 100%;
         margin: 10px 0px;
     }
+
+    label:hover {
+        animation: none;
+    }
+
     .button-container {
         justify-content: center;
     }

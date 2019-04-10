@@ -87,12 +87,10 @@ $.getJSON("data.json",function(data) {
     This method creates a modal using CSS and JavaScript.
     */
     $('#submit-button').on('click', function(e) {
-        
         var choices = $("input[type=radio]:checked").map(function(i,radio) {
             return $(radio).val();
         }).toArray();
     
-        
         var outcome_modals = [];
         var values= [];
     
@@ -109,14 +107,18 @@ $.getJSON("data.json",function(data) {
         the most common answer.*/
         if (choices.length == data.questions.length) {
             $("#error-modal").hide();
+            /*Weights is initiated so that each index in weights will represent the number of times
+            the answer at the same index in values was chosen (e.g. if weights[0]=3, the answer 
+            associated with values[0] was chosen 3 times).*/
             var weights = new Array(values.length).fill(0);
-            
+           
             for (var i=0; i<choices.length;i++) {
                 for (var j=0; j<values.length; j++) {
                     if (choices[i] === values[j]) {weights[j] = weights[j] + 1};
                 }
             }
-
+            /*Determine the index at which the count in weights is the highest. Show the user
+            the modal with the CSS id that is a the same index in outcome_modals.*/
             var find_max = Math.max.apply(Math, weights);
             for (i = 0; i<weights.length; i++) {
                 if(weights[i] == find_max) {
@@ -149,6 +151,9 @@ $("#close-modal").click(function() {
     $(".flex-container").css("opacity","1"); 
 });
 
+/*Inspired by https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
+This method refreshes the page when the user clicks the reset button, so that all checked answers
+become unchecked. */
 $("#reset").click(function() {
     $(".modal").hide();
     $(".flex-container").css("opacity","1");
