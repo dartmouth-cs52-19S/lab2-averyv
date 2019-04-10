@@ -30,9 +30,9 @@ I wanted to use merely flex boxes for the question container rather than dividin
 
 ![alt text](images/submit-button-original.jpg)
 
-![alt text](images/submit-button-1.jpg)
+![alt text](images/submit-button-hover-1.jpg)
 
-![alt text](images/submit-button-2.jpg)
+![alt text](images/submit-button-hover-2.jpg)
 
 5. The modal that appears when you click the submit button appears to slide down from the top of the screen.
 6. If you have chosen an answer for all the available questions and clicked the submit button, the modal that appears will have a button that says "Take quiz again."  On hover, the size of the text and the button will grow and the text color will continuously change colors (like the submit box).  When you click this box, your answers will be cleared so that you can retake the quiz.
