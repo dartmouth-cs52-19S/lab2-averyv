@@ -1,0 +1,3 @@
+Extra credit: why might it be better for this to be placed at the bottom rather than in <head> ... </head>?
+
+If the JS file were positioned in <head>...</head>, the site would load this file in before loading in any of the content, which may increase the time it takes for all the content to appear.  When the JS file is positioned at the bottom, the HTML content will be loaded first, so that elements appear on the page faster.  This process is preferred as users often become frustrated if the content on a webpage takes a long time to show up.

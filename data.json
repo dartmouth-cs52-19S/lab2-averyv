@@ -1,0 +1,211 @@
+{
+    "quiz_header_text":"Which episode of \"The Office\" should you watch right now?",
+    "quiz_header_image":"title-background.jpg",
+    "submit_button_text":"Tell me what to watch!",
+    "questions": [
+        {
+            "question_name":"current-emotion",
+            "question_image_url":"question-1-background.jpg",
+            "question_title":"Which emoji do you most relate to????",
+            "type":"image-only",
+            "answers":[
+                {
+                    "answer_image_url":"happy.jpg",
+                    "answer_value":"dinner-party"
+                },
+                {
+                    "answer_image_url":"in-love.jpg",
+                    "answer_value":"niagara"
+                },
+                {
+                    "answer_image_url":"cringe.jpg",
+                    "answer_value":"stress-relief"
+                },
+                {
+                    "answer_image_url":"laughing.jpg",
+                    "answer_value":"injury"
+                },
+                {
+                    "answer_image_url":"sad.jpg",
+                    "answer_value":"goodbye-michael"
+                },
+                {
+                    "answer_image_url":"wink.jpg",
+                    "answer_value":"money"   
+                }
+            ]
+        },
+        {
+            "question_name":"favorite-character",
+            "question_image_url":"question-2-background.jpg",
+            "question_title":"Who is your favorite character?",
+            "type":"text-only",
+            "answers":[
+                {
+                    "text":"Dwight Schrute",
+                    "answer_value":"dinner-party"
+                },
+                {
+                    "text":"Jim Halpert",
+                    "answer_value":"niagara"
+                },
+                {
+                    "text":"Stanley Hudson",
+                    "answer_value":"stress-relief"
+                },
+                {
+                    "text":"Michael Scott",
+                    "answer_value":"injury"
+                },
+                {
+                    "text":"Pam Beesly",
+                    "answer_value":"goodbye-michael"
+                },
+                {
+                    "text":"Angela Martin",
+                    "answer_value":"money"   
+                }
+            ]
+        },
+        {
+            "question_name":"random-object",
+            "question_image_url":"question-3-background.jpg",
+            "question_title":"Pick a miscellaneous object",
+            "type":"image-only",
+            "answers":[
+                {
+                    "answer_image_url":"candle.jpg",
+                    "answer_value":"dinner-party"
+                },
+                {
+                    "answer_image_url":"tie.jpg",
+                    "answer_value":"niagara"
+                },
+                {
+                    "answer_image_url":"first-aid-kit.jpg",
+                    "answer_value":"stress-relief"
+                },
+                {
+                    "answer_image_url":"george-foreman-grill.jpg",
+                    "answer_value":"injury"
+                },
+                {
+                    "answer_image_url":"airplane.jpg",
+                    "answer_value":"goodbye-michael"
+                },
+                {
+                    "answer_image_url":"telephone.jpg",
+                    "answer_value":"money"   
+                }
+            ]
+        },
+        {
+            "question_name":"random-place",
+            "question_image_url":"question-4-background.jpg",
+            "question_title":"Pick a setting",
+            "type":"image-only",
+            "answers":[
+                {
+                    "answer_image_url":"dining-room.jpg",
+                    "answer_value":"dinner-party"
+                },
+                {
+                    "answer_image_url":"boat.jpg",
+                    "answer_value":"niagara"
+                },
+                {
+                    "answer_image_url":"office.jpg",
+                    "answer_value":"stress-relief"
+                },
+                {
+                    "answer_image_url":"bed.jpg",
+                    "answer_value":"injury"
+                },
+                {
+                    "answer_image_url":"airport.jpg",
+                    "answer_value":"goodbye-michael"
+                },
+                {
+                    "answer_image_url":"farm.jpg",
+                    "answer_value":"money"   
+                }
+            ]
+        },
+        {
+            "question_name":"random-object-2",
+            "question_image_url":"question-5-background.jpg",
+            "question_title":"Pick another miscellaneous object",
+            "type":"image-only",
+            "answers":[
+                {
+                    "answer_image_url":"television.jpg",
+                    "answer_value":"dinner-party"
+                },
+                {
+                    "answer_image_url":"kleenex.jpg",
+                    "answer_value":"niagara"
+                },
+                {
+                    "answer_image_url":"fire-alarm.jpg",
+                    "answer_value":"stress-relief"
+                },
+                {
+                    "answer_image_url":"bubble-wrap.jpg",
+                    "answer_value":"injury"
+                },
+                {
+                    "answer_image_url":"cake.jpg",
+                    "answer_value":"goodbye-michael"
+                },
+                {
+                    "answer_image_url":"train.jpg",
+                    "answer_value":"money"   
+                }
+            ]
+        }
+    ],
+    "outcomes": [
+        {
+            "outcome_id":"error",
+            "outcome_image":"error.gif",
+            "type":"error",
+            "text":"You haven't completed the quiz!!!!"
+        },
+        {
+            "outcome_id":"dinner-party",
+            "outcome_image":"dinner-party.gif",
+            "type":"outcome",
+            "text":"You got \"Dinner Party\"!"
+        },
+        {
+            "outcome_id":"niagara",
+            "outcome_image":"niagara.gif",
+            "type":"outcome",
+            "text":"You got \"Niagara\"!"
+        },
+        {
+            "outcome_id":"stress-relief",
+            "outcome_image":"stress-relief.gif",
+            "type":"outcome",
+            "text":"You got \"Stress Relief\"!"
+        },
+        {
+            "outcome_id":"injury",
+            "outcome_image":"the-injury.gif",
+            "type":"outcome",
+            "text":"You got \"The Injury\"!"
+        },
+        {
+            "outcome_id":"goodbye-michael",
+            "outcome_image":"goodbye-michael.gif",
+            "type":"outcome",
+            "text":"You got \"Goodbye Michael\"!"
+        },
+        {
+            "outcome_id":"money",
+            "outcome_image":"money.gif",
+            "type":"outcome",
+            "text":"You got \"Money\"!"
+        }
+    ]
+}
