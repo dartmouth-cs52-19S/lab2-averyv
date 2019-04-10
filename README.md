@@ -19,9 +19,21 @@ I wanted to use merely flex boxes for the question container rather than dividin
 	1. For text answers, the text increases in size on hover.
 	2. For image answers, the image zooms in on hover.
 
+![alt text](images/label-hover.jpg)
+
 2. When you click on any of the image answers, the chosen image zooms in (holds onto the zoom from hover), and the rest of the images fade.
 3. When you click on any of the text answers, the chosen text holds onto the increased size from hover, and the rest return to the original, smaller size.  The chosen text obtains a red text shadow.
+
+![alt text](images/text-label-checked.jpg)
+
 4. When you hover over the submit button at the end of the quiz (says "Tell me what to watch!"), the size of the text and the size of the box increase.  The text continuously changes colors.
+
+![alt text](images/submit-button-original.jpg)
+
+![alt text](images/submit-button-1.jpg)
+
+![alt text](images/submit-button-2.jpg)
+
 5. The modal that appears when you click the submit button appears to slide down from the top of the screen.
 6. If you have chosen an answer for all the available questions and clicked the submit button, the modal that appears will have a button that says "Take quiz again."  On hover, the size of the text and the button will grow and the text color will continuously change colors (like the submit box).  When you click this box, your answers will be cleared so that you can retake the quiz.
 
