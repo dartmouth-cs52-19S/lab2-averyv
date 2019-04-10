@@ -330,4 +330,11 @@ This method makes the modal fade in as it slides in from the top*/
     .button-container {
         justify-content: center;
     }
+    button, #submit-button {
+        font-size: 2.5rem;
+    }
+    button:hover, #submit-button:hover, #close-modal:hover {
+        font-size: 2.5rem;
+    }
+    
 }
